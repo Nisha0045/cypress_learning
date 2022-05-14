@@ -50,8 +50,6 @@ password='123456789'
     cy.get(':nth-child(3) > .MuiRadio-root > .PrivateSwitchBase-input').click()
     cy.get('#CNIC_NTN').type('422013456543')
      cy.get('#mui-5').click()
-     
-     // cy.get('#mui-1')
      cy.get('#userName').type(email)
      cy.get('#password').type(password)
      cy.get('#mui-6').click()
