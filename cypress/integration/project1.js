@@ -1,7 +1,4 @@
-// const cypress = require("cypress");
-
-
-
+// const cypress = require
 it('login portal ', () => {
   var email= ""
   var password=""
@@ -26,10 +23,9 @@ password='123456789'
        result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     return result;
-
   }  
 
-     cy.visit('https://af8c-202-5-144-98.ngrok.io/')
+     cy.visit('https://ac1f-202-5-146-125.ngrok.io/')
      cy.get('[href="/login/supplier"]').click();
      cy.get('#userName').type('03'+randomnumbergenerator(9))
      cy.get('#mui-2').click();
@@ -54,4 +50,6 @@ password='123456789'
      cy.get('#password').type(password)
      cy.get('#mui-6').click()
 
-   })
+})
+
+
