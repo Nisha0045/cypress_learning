@@ -31,7 +31,7 @@ function generateRandomChasisNum(length){
 
     cy.visit('https://beta.api.trukkr.pk')
 
-    cy.get(':nth-child(6) > .c-sidebar-nav-link').click()
+    cy.get(':nth-child(6) > .c-sidebar-nav-link',{timeout:5000}).click()
     cy.get('#mui-1').click()
     cy.get('#regNumber',{ timeout: 5000 }).type(generateRandomNumPlate(4))
 
@@ -46,10 +46,19 @@ function generateRandomChasisNum(length){
     cy.get('#fuelType > .css-n7p1v0-control > .css-1hwfws3',{timeout:500}).click()
     cy.get('#react-select-6-option-1',{timeout:5000}).click()
     cy.get(':nth-child(3) > .documents-section > .text-center > .w-100 > .inner-div',{timeout:5000}).click()
-    cy.get('.float-right > svg').click()
-    cy.get(':nth-child(1) > .documents-section > .text-center > .w-100 > .inner-div').click()
+    //scy.get('.float-right > svg').click()
+    //cy.get(':nth-child(3) > .documents-section > .text-center > .card-title').click()
+   //
+          //cy.visit('beta.api@trukkr.pk') 
+          // const fileupload="image.png"
+          // cy.get("[name=':nth-child(3) > .documents-section > .text-center > .w-100 > .inner-div']")
+          // .attachFile(fileupload);
+          cy.get('[type="file"]').attachFile('image.png')
+      
+          file
+
+      })
+      
 
 
 
-}
-)
