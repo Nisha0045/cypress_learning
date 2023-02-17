@@ -26,9 +26,6 @@ it('Alpha login', () => {
 
   }
 
-
-
-
   cy.visit('https://beta.api.trukkr.pk')
 
   cy.get(':nth-child(6) > .c-sidebar-nav-link').click()

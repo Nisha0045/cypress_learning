@@ -1,5 +1,7 @@
 it('Alpha login', () => {
+    
     cy.visit('https://beta.api.trukkr.pk')
+    cy.viewport(1280, 720)
     cy.get('#userName').type('devacc@trukkr.pk')
     cy.get('#password').type('123456789')
     cy.get('#mui-1').click()
@@ -51,14 +53,9 @@ it('Alpha login', () => {
     cy.get('#mui-36').click({force:true})
     cy.get('#doNUmber').type('12345678')
     cy.get('.MuiBox-root > .row > .col-12 > .form-control').type('anything!!!')
-    cy.wait(2000)
-    cy.get('#mui-22').click({force:true})
-    cy.get('.dropup > .dropdown-menu > :nth-child(2)').click()
-    cy.wait(2000)
-    cy.get('#assignedTransporter > .css-n7p1v0-control > .css-1wy0on6 > .css-tlfecz-indicatorContainer').click()
-    cy.get('#react-select-9-option-6').click()
-    cy.get('#mui-40').click()
-    cy.get('#mui-40').click()
+    cy.get('#mui-24').click()
+    cy.get('#mui-24').click()
+    cy.get(':nth-child(1) > :nth-child(8) > .hover-link > span').click()
     
 
 
