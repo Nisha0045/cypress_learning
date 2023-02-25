@@ -56,6 +56,7 @@ it('Alpha login', () => {
     cy.get('.MuiBox-root > .row > .col-12 > .form-control').type('anything!!!')
     cy.get('#mui-22').click()
     cy.get('#mui-22').click()
+    cy.get(':nth-child(1) > :nth-child(8) > .hover-link > span')
    
 
 })

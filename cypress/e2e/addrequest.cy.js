@@ -10,7 +10,7 @@ it('Alpha login', () => {
     cy.get(':nth-child(2) > .MuiTypography-root > .row > .col-12 > .MuiAutocomplete-root > .MuiFormControl-root > .MuiOutlinedInput-root > #client-dropdown').click()
     cy.get('#client-dropdown-option-30', { timeout: 5000 }).click({ force: true })
     cy.get('.form-group > .MuiFormControl-root > .MuiOutlinedInput-root').click()
-    cy.get(':nth-child(4) > :nth-child(7) > .MuiButtonBase-root').click({ force: true })
+    cy.get(':nth-child(5) > :nth-child(3) > .MuiButtonBase-root').click({ force: true })
     cy.get('.time-slot > .css-n7p1v0-control > .css-1hwfws3').click()
     cy.get('#react-select-2-option-4').click()
     cy.get('#mui-17').click()

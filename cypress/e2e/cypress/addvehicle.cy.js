@@ -1,3 +1,5 @@
+// import { generateRandomChasisNum, generateRandomNumPlate } from "./utils/randomGenerate"
+
 it('Alpha login', () => {
 
   function generateRandomNumPlate(length) {
@@ -48,5 +50,6 @@ it('Alpha login', () => {
   cy.wait(2000)
   cy.get('[type="file"]').attachFile('image.png', { allowEmpty: true })
   cy.get('#mui-5').click()
+  
 
 })
