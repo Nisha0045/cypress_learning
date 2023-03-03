@@ -43,10 +43,12 @@ it('Alpha login', () => {
     // cy.get(':nth-child(8) > .form-group > #_id > .css-n7p1v0-control > .css-1wy0on6 > .css-tlfecz-indicatorContainer').click()
     // cy.get('.form-control medium-priority', { timeout: 5000 }).type(randomGenerator(5, "Name"))
     // cy.get('.form-control medium-priority"').type(randomGenerator(5,"Name"))
+    cy.get('input[name="location.0.locationName"]').type('Trukkr Office')
     cy.get(':nth-child(2) > .form-group > #_id > .css-n7p1v0-control > .css-1wy0on6 > .css-tlfecz-indicatorContainer').click()
-    cy.get('#react-select-6-option-1').click()
-    cy.get('.form-control medium-priority').type('Gizri phase 4 karachi')
-    cy.get('#mui-13').click()
+    cy.get('#react-select-6-option-55').click()
+    // cy.get('#location\[0\]\.address', { timeout: 5000 }).type('Gizri phase 4 karachi')
+    cy.get('input[name="location[0].address"]').type('Gizri phase 4 karachi')
+    cy.get('#mui-7').click()
 
 
 
